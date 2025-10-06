@@ -2,14 +2,27 @@
     border-color: rgb(212, 212, 212) !important;
 }
 
+.navs{
+    justify-content: space-between !important;
+}
+
+ul{
+    list-style: none;
+    padding-inline-start: 0 !important;
+}
 .nav-item:hover, .nav-item:active{
     border-bottom: 2px solid black ;
 }
+/* 
+.nav-link.active{
+    border-bottom: 2px solid black ;
+
+} */
 .nav-item{
     font-weight: bold;
 }
 
-.dropdown:hover .dropdown-menu{
+.dropdown:hover .dropdown-menu, .dropdown:hover .dropdown-overlay{
     display: block;
 }
 .dropdown-menu{
@@ -42,7 +55,7 @@
 .dropdown-subItem{
     font-size: 12px;
     font-weight: normal;
-    color: rgb(170, 170, 170);
+    color: rgb(170, 170, 170) !important;
 }
 
 .navBtnTrial{
@@ -65,18 +78,33 @@
 
 .adobeCon{
     border: none !important;
+
 }
 
-.adobeCon .dropdown-menu{
+.adobeDropdown .dropdown-menu{
     transform: translateX(-100px);
-}
-.adobeCon:hover .cover{
-    background-color: rgba(1, 3, 10, 0.664) !important;
-    background-blend-mode: overlay;
-    display: block;
-
+    overflow: visible;
 }
 
-.cover{
-    height: 100vh;
+.dropdown-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.5);
+  display: none;
 }
+
+.dropdown-menu{
+    display: none;
+}
+
+.dropdown-menu.show ~ .dropdown-overlay {
+  display: block !important;
+}
+
+
+.dropdown-sm:hover .dropdown-menu-sm{
+    display: block !important;
+}
+

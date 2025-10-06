@@ -8,101 +8,215 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
         integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
     <link rel="stylesheet" href="css/behance.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
 </head>
 
 <body>
 
     <nav class="navbar navbar-expand-lg bg-white border-bottom border-1 border-secondary p-0">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#"><img width="90px" src="images/Untitled_design-removebg-preview.png"
-                    alt=""></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse d-flex justify-content-between" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 align-items-center mb-lg-0 text-dark">
-                    <li class="nav-item">
-                        <a class="nav-link active text-dark" aria-current="page" href="#">Explore</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active text-dark" aria-current="page" href="#">Job</a>
-                    </li>
-                    <li class="nav-item dropdown d-flex align-items-center">
-                        <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Resources
-                        </a>
-                        <ul class="dropdown-menu py-3">
-                            <li><a class="dropdown-item" href="#">Overview</a></li>
-                            <li><a class="dropdown-item" href="#">Career Goals</a></li>
-                            <li><a class="dropdown-item" href="#">Commissioned Projects</a></li>
-                            <li><a class="dropdown-item" href="#">Creative Apprentiship</a></li>
-                        </ul>
-                        <img src="images/iconamoon--arrow-down-2-light.png" height="20px" alt="">
-                    </li>
-                    <li class="navBreak">|</li>
-                    <li class="nav-item dropdown d-flex align-items-center">
-                        <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Hire
-                        </a>
-                        <ul class="dropdown-menu py-3">
-                            <li><a class="dropdown-item align-items-center d-flex" href="#"><img
-                                        src="images/mdi-light--clipboard-text.png" alt="">Hiring Dashboard</a></li>
-                            <li><a class="dropdown-item align-items-center d-flex" href="#"><img
-                                        src="images/mynaui--search.png" alt="">Freelancers</a></li>
-                            <li><a class="dropdown-item align-items-center d-flex" href="#"><img
-                                        src="images/iconamoon--arrow-down-2-light.png" alt="">Hire On Behance</a></li>
-                            <li><a class="dropdown-item align-items-center d-flex" href="#"><img
-                                        src="images/formkit--add.png" alt="">Create New Job</a></li>
-                            <hr>
-                            <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Logo Designers</a>
+        <div class="container-fluid justify-content-start">
+            <div class="mainMenu">
+                <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                    <i class="bi bi-list fs-2 text-dark"></i>
+                </button>
+                <a class="navbar-brand d-none d-lg-block" href="#"><img width="90px"
+                        src="images/Untitled_design-removebg-preview.png" alt=""></a>
+                <a class="navbar-brand d-lg-none" href="#"><img width="30px" height="20px"
+                        src="images/download__2_-removebg-preview.png" alt=""></a>
+
+            </div>
+
+            <div class="d-none d-lg-block">
+                <div class="d-lg-flex navs justify-content-between w-100">
+                    <ul class="navbar-nav me-auto mb-2 align-items-center mb-lg-0 text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link active text-dark" aria-current="page" href="#">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="#">Job</a>
+                        </li>
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu py-3">
+                                <li><a class="dropdown-item" href="#">Overview</a></li>
+                                <li><a class="dropdown-item" href="#">Career Goals</a></li>
+                                <li><a class="dropdown-item" href="#">Commissioned Projects</a></li>
+                                <li><a class="dropdown-item" href="#">Creative Apprentiship</a></li>
+                            </ul>
+                            <img src="images/iconamoon--arrow-down-2-light.png" height="20px" alt="">
+                        </li>
+                        <li class="navBreak">|</li>
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hire
+                            </a>
+                            <ul class="dropdown-menu py-3">
+                                <li><a class="dropdown-item align-items-center d-flex" href="#"><img
+                                            src="images/mdi-light--clipboard-text.png" alt="">Hiring Dashboard</a></li>
+                                <li><a class="dropdown-item align-items-center d-flex" href="#"><img
+                                            src="images/mynaui--search.png" alt="">Freelancers</a></li>
+                                <li><a class="dropdown-item align-items-center d-flex" href="#"><img
+                                            src="images/iconamoon--arrow-down-2-light.png" alt="">Hire On Behance</a>
+                                </li>
+                                <li><a class="dropdown-item align-items-center d-flex" href="#"><img
+                                            src="images/formkit--add.png" alt="">Create New Job</a></li>
+                                <hr>
+                                <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Logo
+                                        Designers</a>
+                                </li>
+                                <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Brand
+                                        Designers</a></li>
+                                <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Website
+                                        Designers</a></li>
+                                <li><a class="dropdown-item dropdown-subItem align-items-center"
+                                        href="#">Illustrators</a>
+                                </li>
+                                <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Social Media
+                                        Designers</a></li>
+
+                            </ul>
+                            <img src="images/iconamoon--arrow-down-2-light.png" height="20px" alt="">
+                        </li>
+
+                    </ul>
+
+                    <div class="d-flex align-items-center gap-3">
+                        <a href="start_trail.html" target="_blank"><button
+                                class="btn text-white navBtnTrial rounded-pill px-2 py-1 fs-6" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" data-bs-title="Try Behance Pro with a 7-day free trial">Start
+                                a
+                                Free Trial</button></a>
+                        <a href=""><button class="btn btn-outline-primary rounded-pill px-3 py-1 fs-6 signin-btn">Sign
+                                In</button></a>
+
+                        <div class="adobeCon position-relative">
+                            <li class="nav-item dropdown adobeDropdown d-flex align-items-center">
+                                <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="images/Untitled_design__1_-removebg-preview.png" width="90" height="70"
+                                        alt="">
+                                </a>
+                                <ul class="dropdown-menu py-3">
+                                    <li><a class="dropdown-item" href="#">Overview</a></li>
+                                    <li><a class="dropdown-item" href="#">Career Goals</a></li>
+                                    <li><a class="dropdown-item" href="#">Commissioned Projects</a></li>
+                                    <li><a class="dropdown-item" href="#">Creative Apprentiship</a></li>
+                                </ul>
+                                <div class="dropdown-overlay"></div>
                             </li>
-                            <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Brand
-                                    Designers</a></li>
-                            <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Website
-                                    Designers</a></li>
-                            <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Illustrators</a>
-                            </li>
-                            <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Social Media
-                                    Designers</a></li>
-
-                        </ul>
-                        <img src="images/iconamoon--arrow-down-2-light.png" height="20px" alt="">
-                    </li>
-
-                </ul>
-
-                <div class="d-flex align-items-center">
-                    <a href="start_trail.html" target="_blank"><button
-                            class="btn text-white navBtnTrial rounded-pill px-2 py-1 fs-6" data-bs-toggle="tooltip"
-                            data-bs-placement="bottom" data-bs-title="Try Behance Pro with a 7-day free trial">Start a
-                            Free Trial</button></a>
-                    <a href=""><button class="btn btn-outline-primary rounded-pill px-3 py-1 fs-6 signin-btn">Sign
-                            In</button></a>
-                    <li class="nav-item dropdown d-flex align-items-center adobeCon position-relative">
-                        <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            <img src="images/Untitled_design__1_-removebg-preview.png" width="90px" height="70px"
-                                alt="">
-                        </a>
-                        <ul class="dropdown-menu py-3">
-                            <li><a class="dropdown-item" href="#">Overview</a></li>
-                            <li><a class="dropdown-item" href="#">Career Goals</a></li>
-                            <li><a class="dropdown-item" href="#">Commissioned Projects</a></li>
-                            <li><a class="dropdown-item" href="#">Creative Apprentiship</a></li>
-                        </ul>
-                        <div class="position-absolute container-fluid w-100 col-12 cover bg-white d-none">
-
                         </div>
-                    </li>
-                </div>
 
+                    </div>
+                </div>
             </div>
         </div>
     </nav>
+
+    <div class="offcanvas offcanvas-start w-50" data-bs-backdrop="true" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header align-items-center">
+            <button type="button" class="bg-transparent border-0" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="bi bi-x fs-2"></i></button>
+            <a href=""><button class="btn btn-outline-primary rounded-pill px-3 py-1 fs-6 signin-btn">Log
+                    In</button></a>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 align-items-start mb-lg-0 text-dark navbar-nav-sm">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="#">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" aria-current="page" href="#">Job</a>
+                </li>
+                <li class="nav-item dropdown-sm">
+                    <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Resources
+                    </a>
+                    <ul class="dropdown-menu-sm d-none py-3">
+                        <li><a class="dropdown-item fs-6 mb-3" href="#">Overview</a></li>
+                        <li><a class="dropdown-item fs-6 mb-3" href="#">Career Goals</a></li>
+                        <li><a class="dropdown-item fs-6 mb-3" href="#">Commissioned Projects</a></li>
+                        <li><a class="dropdown-item fs-6" href="#">Creative Apprentiship</a></li>
+                    </ul>
+
+                </li>
+                <li class="nav-item dropdown-sm d-column">
+                    <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Hire
+                    </a>
+
+                    <ul class="dropdown-menu-sm d-none py-3 fs-6">
+                        <li><a class="dropdown-item align-items-center d-flex fs-6 mb-2" href="#">Hiring Dashboard</a>
+                        </li>
+                        <li><a class="dropdown-item align-items-center d-flex fs-6 mb-2" href="#">Freelancers</a></li>
+                        <li><a class="dropdown-item align-items-center d-flex fs-6 mb-2" href="#">Hire On Behance</a>
+                        </li>
+                        <li><a class="dropdown-item align-items-center d-flex fs-6 mb-2" href="#">Create New Job</a>
+                        </li>
+                        <hr>
+                        <li><a class="dropdown-item dropdown-subItem align-items-center mb-2 fs-6" href="#">Logo
+                                Designers</a>
+                        </li>
+                        <li><a class="dropdown-item dropdown-subItem align-items-center mb-2 fs-6" href="#">Brand
+                                Designers</a></li>
+                        <li><a class="dropdown-item dropdown-subItem align-items-center mb-2 fs-6" href="#">Website
+                                Designers</a></li>
+                        <li><a class="dropdown-item dropdown-subItem align-items-center mb-2 fs-6"
+                                href="#">Illustrators</a>
+                        </li>
+                        <li><a class="dropdown-item dropdown-subItem align-items-center fs-6" href="#">Social Media
+                                Designers</a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="d-flex mt-5 gap-3 flex-column">
+                <img src="images/apple-app-store-button.svg" width="150px" alt="">
+                <img src="images/google-play-button.svg" width="150px" alt="">
+            </div>
+
+            <div>
+                <ul class="dropdown-menu-sm d-none py-3">
+                    <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        More Behance
+                    </a>
+                    <li><a class="dropdown-item align-items-center d-flex mb-2" href="#">Hiring Dashboard</a></li>
+                    <li><a class="dropdown-item align-items-center d-flex mb-2" href="#">Freelancers</a></li>
+                    <li><a class="dropdown-item align-items-center d-flex mb-2" href="#">Hire On Behance</a>
+                    </li>
+                    <li><a class="dropdown-item align-items-center d-flex mb-2" href="#">Create New Job</a></li>
+                    <hr>
+                    <li><a class="dropdown-item dropdown-subItem align-items-center mb-2" href="#">Logo
+                            Designers</a>
+                    </li>
+                    <li><a class="dropdown-item dropdown-subItem align-items-center mb-2" href="#">Brand
+                            Designers</a></li>
+                    <li><a class="dropdown-item dropdown-subItem align-items-center mb-2" href="#">Website
+                            Designers</a></li>
+                    <li><a class="dropdown-item dropdown-subItem align-items-center mb-2" href="#">Illustrators</a>
+                    </li>
+                    <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Social Media
+                            Designers</a></li>
+
+                </ul>
+            </div>
+
+        </div>
+    </div>
+
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
@@ -113,6 +227,8 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
 
     <script>
         const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
