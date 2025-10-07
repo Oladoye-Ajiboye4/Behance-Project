@@ -16,8 +16,8 @@
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-white border-bottom border-1 border-secondary p-0">
-        <div class="container-fluid justify-content-start">
+    <nav class="navbar navbar-expand-lg bg-white border-bottom border-1 border-secondary px-2 py-0">
+        <div class="container-fluid w-100">
             <div class="mainMenu">
                 <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas"
                     data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
@@ -29,20 +29,80 @@
                         src="images/download__2_-removebg-preview.png" alt=""></a>
 
             </div>
+            <div class="d-lg-none">
+                <button class="btn btn-primary fw-bold px-3 py-1 rounded-pill">Use App</button>
+            </div>
+            <div class="d-none d-lg-flex navs justify-content-between w-100">
+                <ul class="navbar-nav me-auto mb-2 align-items-center mb-lg-0 text-dark">
+                    <li class="nav-item">
+                        <a class="nav-link active text-dark" aria-current="page" href="#">Explore</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-dark" aria-current="page" href="#">Job</a>
+                    </li>
+                    <li class="nav-item dropdown d-flex align-items-center">
+                        <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Resources
+                        </a>
+                        <ul class="dropdown-menu py-3">
+                            <li><a class="dropdown-item" href="#">Overview</a></li>
+                            <li><a class="dropdown-item" href="#">Career Goals</a></li>
+                            <li><a class="dropdown-item" href="#">Commissioned Projects</a></li>
+                            <li><a class="dropdown-item" href="#">Creative Apprentiship</a></li>
+                        </ul>
+                        <img src="images/iconamoon--arrow-down-2-light.png" height="20px" alt="">
+                    </li>
+                    <li class="navBreak">|</li>
+                    <li class="nav-item dropdown d-flex align-items-center">
+                        <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Hire
+                        </a>
+                        <ul class="dropdown-menu py-3">
+                            <li><a class="dropdown-item align-items-center d-flex" href="#"><img
+                                        src="images/mdi-light--clipboard-text.png" alt="">Hiring Dashboard</a></li>
+                            <li><a class="dropdown-item align-items-center d-flex" href="#"><img
+                                        src="images/mynaui--search.png" alt="">Freelancers</a></li>
+                            <li><a class="dropdown-item align-items-center d-flex" href="#"><img
+                                        src="images/iconamoon--arrow-down-2-light.png" alt="">Hire On Behance</a>
+                            </li>
+                            <li><a class="dropdown-item align-items-center d-flex" href="#"><img
+                                        src="images/formkit--add.png" alt="">Create New Job</a></li>
+                            <hr>
+                            <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Logo
+                                    Designers</a>
+                            </li>
+                            <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Brand
+                                    Designers</a></li>
+                            <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Website
+                                    Designers</a></li>
+                            <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Illustrators</a>
+                            </li>
+                            <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Social Media
+                                    Designers</a></li>
 
-            <div class="d-none d-lg-block">
-                <div class="d-lg-flex navs justify-content-between w-100">
-                    <ul class="navbar-nav me-auto mb-2 align-items-center mb-lg-0 text-dark">
-                        <li class="nav-item">
-                            <a class="nav-link active text-dark" aria-current="page" href="#">Explore</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" aria-current="page" href="#">Job</a>
-                        </li>
-                        <li class="nav-item dropdown d-flex align-items-center">
+                        </ul>
+                        <img src="images/iconamoon--arrow-down-2-light.png" height="20px" alt="">
+                    </li>
+
+                </ul>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="start_trail.html" target="_blank"><button
+                            class="btn text-white navBtnTrial rounded-pill px-2 py-1 fs-6" data-bs-toggle="tooltip"
+                            data-bs-placement="bottom" data-bs-title="Try Behance Pro with a 7-day free trial">Start
+                            a
+                            Free Trial</button></a>
+                    <a href=""><button class="btn btn-outline-primary rounded-pill px-3 py-1 fs-6 signin-btn">Sign
+                            In</button></a>
+
+                    <div class="adobeCon position-relative">
+                        <li class="nav-item dropdown adobeDropdown d-flex align-items-center">
                             <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
                                 aria-expanded="false">
-                                Resources
+                                <img src="images/Untitled_design__1_-removebg-preview.png" width="90" height="70"
+                                    alt="">
                             </a>
                             <ul class="dropdown-menu py-3">
                                 <li><a class="dropdown-item" href="#">Overview</a></li>
@@ -50,71 +110,10 @@
                                 <li><a class="dropdown-item" href="#">Commissioned Projects</a></li>
                                 <li><a class="dropdown-item" href="#">Creative Apprentiship</a></li>
                             </ul>
-                            <img src="images/iconamoon--arrow-down-2-light.png" height="20px" alt="">
+                            <div class="dropdown-overlay"></div>
                         </li>
-                        <li class="navBreak">|</li>
-                        <li class="nav-item dropdown d-flex align-items-center">
-                            <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                                aria-expanded="false">
-                                Hire
-                            </a>
-                            <ul class="dropdown-menu py-3">
-                                <li><a class="dropdown-item align-items-center d-flex" href="#"><img
-                                            src="images/mdi-light--clipboard-text.png" alt="">Hiring Dashboard</a></li>
-                                <li><a class="dropdown-item align-items-center d-flex" href="#"><img
-                                            src="images/mynaui--search.png" alt="">Freelancers</a></li>
-                                <li><a class="dropdown-item align-items-center d-flex" href="#"><img
-                                            src="images/iconamoon--arrow-down-2-light.png" alt="">Hire On Behance</a>
-                                </li>
-                                <li><a class="dropdown-item align-items-center d-flex" href="#"><img
-                                            src="images/formkit--add.png" alt="">Create New Job</a></li>
-                                <hr>
-                                <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Logo
-                                        Designers</a>
-                                </li>
-                                <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Brand
-                                        Designers</a></li>
-                                <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Website
-                                        Designers</a></li>
-                                <li><a class="dropdown-item dropdown-subItem align-items-center"
-                                        href="#">Illustrators</a>
-                                </li>
-                                <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Social Media
-                                        Designers</a></li>
-
-                            </ul>
-                            <img src="images/iconamoon--arrow-down-2-light.png" height="20px" alt="">
-                        </li>
-
-                    </ul>
-
-                    <div class="d-flex align-items-center gap-3">
-                        <a href="start_trail.html" target="_blank"><button
-                                class="btn text-white navBtnTrial rounded-pill px-2 py-1 fs-6" data-bs-toggle="tooltip"
-                                data-bs-placement="bottom" data-bs-title="Try Behance Pro with a 7-day free trial">Start
-                                a
-                                Free Trial</button></a>
-                        <a href=""><button class="btn btn-outline-primary rounded-pill px-3 py-1 fs-6 signin-btn">Sign
-                                In</button></a>
-
-                        <div class="adobeCon position-relative">
-                            <li class="nav-item dropdown adobeDropdown d-flex align-items-center">
-                                <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    <img src="images/Untitled_design__1_-removebg-preview.png" width="90" height="70"
-                                        alt="">
-                                </a>
-                                <ul class="dropdown-menu py-3">
-                                    <li><a class="dropdown-item" href="#">Overview</a></li>
-                                    <li><a class="dropdown-item" href="#">Career Goals</a></li>
-                                    <li><a class="dropdown-item" href="#">Commissioned Projects</a></li>
-                                    <li><a class="dropdown-item" href="#">Creative Apprentiship</a></li>
-                                </ul>
-                                <div class="dropdown-overlay"></div>
-                            </li>
-                        </div>
-
                     </div>
+
                 </div>
             </div>
         </div>
@@ -129,19 +128,19 @@
                     In</button></a>
         </div>
         <div class="offcanvas-body">
-            <ul class="navbar-nav me-auto mb-2 align-items-start mb-lg-0 text-dark navbar-nav-sm">
+            <ul class="navbar-nav me-auto mb-2 align-items-start mb-lg-0 text-dark navbar-nav navbar-nav-resp">
                 <li class="nav-item">
                     <a class="nav-link active text-dark" aria-current="page" href="#">Explore</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link text-dark" aria-current="page" href="#">Job</a>
                 </li>
-                <li class="nav-item dropdown-sm">
+                <li class="nav-item dropdown-resp">
                     <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Resources
                     </a>
-                    <ul class="dropdown-menu-sm d-none py-3">
+                    <ul class="dropdown-menu-resp d-none py-3">
                         <li><a class="dropdown-item fs-6 mb-3" href="#">Overview</a></li>
                         <li><a class="dropdown-item fs-6 mb-3" href="#">Career Goals</a></li>
                         <li><a class="dropdown-item fs-6 mb-3" href="#">Commissioned Projects</a></li>
@@ -149,13 +148,13 @@
                     </ul>
 
                 </li>
-                <li class="nav-item dropdown-sm d-column">
+                <li class="nav-item dropdown-resp d-column">
                     <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         Hire
                     </a>
 
-                    <ul class="dropdown-menu-sm d-none py-3 fs-6">
+                    <ul class="dropdown-menu-resp d-none py-3 fs-6">
                         <li><a class="dropdown-item align-items-center d-flex fs-6 mb-2" href="#">Hiring Dashboard</a>
                         </li>
                         <li><a class="dropdown-item align-items-center d-flex fs-6 mb-2" href="#">Freelancers</a></li>
@@ -188,44 +187,117 @@
             </div>
 
             <div>
-                <ul class="dropdown-menu-sm d-none py-3">
+
+                <li class="nav-item dropdown-resp mt-4">
                     <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         More Behance
                     </a>
-                    <li><a class="dropdown-item align-items-center d-flex mb-2" href="#">Hiring Dashboard</a></li>
-                    <li><a class="dropdown-item align-items-center d-flex mb-2" href="#">Freelancers</a></li>
-                    <li><a class="dropdown-item align-items-center d-flex mb-2" href="#">Hire On Behance</a>
-                    </li>
-                    <li><a class="dropdown-item align-items-center d-flex mb-2" href="#">Create New Job</a></li>
-                    <hr>
-                    <li><a class="dropdown-item dropdown-subItem align-items-center mb-2" href="#">Logo
-                            Designers</a>
-                    </li>
-                    <li><a class="dropdown-item dropdown-subItem align-items-center mb-2" href="#">Brand
-                            Designers</a></li>
-                    <li><a class="dropdown-item dropdown-subItem align-items-center mb-2" href="#">Website
-                            Designers</a></li>
-                    <li><a class="dropdown-item dropdown-subItem align-items-center mb-2" href="#">Illustrators</a>
-                    </li>
-                    <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Social Media
-                            Designers</a></li>
+                    <ul class="dropdown-menu-resp d-none py-3">
+                        <li><a class="dropdown-item fs-6 mb-3" href="#">Career at Behance</a></li>
+                        <li><a class="dropdown-item fs-6 mb-3" href="#">About Bahance</a></li>
+                        <li><a class="dropdown-item fs-6 mb-3" href="#">Adobe Portfolio</a></li>
+                        <li><a class="dropdown-item fs-6" href="#">Blog</a></li>
+                    </ul>
 
-                </ul>
+                </li>
             </div>
 
         </div>
     </div>
 
+    <div class="container-fluid gap-3 py-2 px-3 nav2 d-flex">
+        <div
+            class="d-flex align-items-center justify-content-center py-1 gap-2 bg-light border border-1 bg-white rounded-pill filter-container">
+            <div>
+                <i class="bi bi-sliders fs-6 text-secondary"></i>
+            </div>
+            <span class="fw-bold fs-6 d-none d-lg-block">Filter</span>
+        </div>
+
+        <div class="border border-2 rounded-pill search-container w-75 d-flex align-items-center">
+            <input type="text" placeholder="Search Behance.." class="bg-transparent px-3 py-3 border-0 w-75 fw-bold">
+            <div class="d-lg-flex align-items-center gap-2 fw-bold d-none">
+                <div
+                    class="nav2-nav-item px-2 py-1 border border-1 active bg-white rounded-pill d-flex justify-content-center">
+                    Projects</div>
+                <div class="nav2-nav-item px-2 py-1 text-secondary rounded-pill d-flex justify-content-center">People
+                </div>
+                <div class="nav2-nav-item px-2 py-1 text-secondary rounded-pill d-flex justify-content-center">Assets
+                </div>
+                <div class="nav2-nav-item px-2 py-1 text-secondary rounded-pill d-flex justify-content-center">Images
+                </div>
+                <div class="navBreak">|</div>
+                <img src="images/other-images/imgi_140_default.png" width="20px"
+                    alt="" class="me-2">
+
+            </div>
+            <div class="dropdown d-lg-none">
+                <button class="btn bg-transparent" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+
+                    <span class="d-md-inline d-none">Projects</span>
+                    <i class="bi bi-chevron-down fs-6 ms-1"></i>
+                </button>
+                <ul class="dropdown-menu fw-bold">
+                    <li><a class="dropdown-item dropdown-item-recom fw-bold d-md-none" href="#">Projects</a></li>
+                    <li><a class="dropdown-item dropdown-item-recom fw-bold" href="#">People</a></li>
+                    <li><a class="dropdown-item dropdown-item-recom fw-bold" href="#">Assets</a></li>
+                    <li><a class="dropdown-item dropdown-item-recom fw-bold" href="#">Images</a></li>
+                    <li><a class="dropdown-item dropdown-item-recom fw-bold" href="#">Search by Image</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div
+            class="dropdown d-flex align-items-center justify-content-center py-1 gap-2 bg-light border border-1 bg-white rounded-pill">
+            <button class="btn bg-transparent dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                <i class="bi bi-filter fs-6 text-secondary"></i>
+                <span class="fw-bold fs-6 d-none d-lg-inline">Recommended</span>
+            </button>
+            <ul class="dropdown-menu fw-bold">
+                <li><a class="dropdown-item dropdown-item-recom active fw-bold" href="#">Recommended</a></li>
+                <li><a class="dropdown-item dropdown-item-recom fw-bold" href="#">Curated</a></li>
+                <li><a class="dropdown-item dropdown-item-recom fw-bold" href="#">Most Appreciated</a></li>
+                <li><a class="dropdown-item dropdown-item-recom fw-bold" href="#">Most Viewd</a></li>
+                <li><a class="dropdown-item dropdown-item-recom fw-bold" href="#">Most Discussed</a></li>
+                <li><a class="dropdown-item dropdown-item-recom fw-bold" href="#">Most Recent</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="d-flex align-items-center nav-card-container mt-2 px-3 gap-2">
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2"><p class="w-100 d-lg-inline">For You</p></div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Following</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Best of Behance</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Graphics</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Photography</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Illustration</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">3D Art</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">UI/UX</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Motion</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Architecture</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Product Design</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Fashion</div>
+         <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">For You</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Following</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Best of Behance</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Graphics</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Photography</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Illustration</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">3D Art</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">UI/UX</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Motion</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Architecture</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Product Design</div>
+        <div class="nav-card d-flex justify-content-center text-white px-2 py-2 rounded-2">Fashion</div>
+    </div>
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
         integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
         integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
-        crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
         crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
