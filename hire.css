@@ -1,0 +1,164 @@
+body{
+    overflow-x: hidden;
+    background-color: #fafbff;
+    height: 100vh;
+}
+
+/* main{
+
+} */
+
+ul{
+    list-style: none;
+    padding-inline-start: 0 !important;
+}
+.nav-item:hover, .nav-link.active{
+    border-bottom: 1.5px solid black ;
+}
+.nav-link.active:hover{
+    border: none !important;
+}
+
+.nav-item{
+    font-weight: bold;
+}
+
+.dropdown:hover .dropdown-menu, .dropdown:hover .dropdown-overlay{
+    display: block;
+}
+
+.dropdown-menu{
+    transform: translateX(-40px);
+    width: 200px;
+}
+
+.navBreak{
+    font-size: 15px;
+    color: rgb(212, 212, 212);
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.dropdown-item{
+    font-weight: bold;
+    font-size: 12px;
+    gap: 7px !important;
+}
+.dropdown-item img{
+    width: 15px;
+}
+
+.dropdown-item:hover, .dropdown-item-recom.active{
+    background-color: transparent !important;
+    color: rgb(22, 22, 233) !important;
+}
+.dropdown-item-recom{
+    font-size: 15px;
+}
+
+
+.dropdown-subItem{
+    font-size: 12px;
+    font-weight: normal;
+    color: rgb(170, 170, 170) !important;
+}
+
+.navBtnTrial{
+    background: linear-gradient(80deg, rgb(7, 135, 255), rgb(69, 8, 211));
+
+}
+
+.signin-btn{
+    background-color: #f5f8ff;
+    color: #5657ff;
+    border: 1px solid #e6eeff;
+
+}
+
+.signin-btn:hover{
+    background-color:#dcf4fd ;
+    color: #5657ff;
+
+}
+
+.adobeCon{
+    border: none !important;
+
+}
+
+.adobeDropdown .dropdown-menu{
+    transform: translateX(-100px);
+    overflow: visible;
+}
+
+.dropdown-overlay {
+  position: fixed;
+  inset: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background: rgba(0, 0, 0, 0.301);
+  display: none;
+  pointer-events: none;
+}
+
+.dropdown-menu{
+    display: none;
+    
+}
+.adobe-dropdown-menu{
+    width: 400px;
+    transform: translateX(-300px) !important;
+}
+
+.dropdown-menu-btn{
+    align-items: center !important;
+    border: 2px solid blue;
+}
+.dropdown-menu.show ~ .dropdown-overlay {
+  display: block;
+}
+
+.dropdown-resp:hover .dropdown-menu-resp{
+    display: block !important;
+    transform: translateX(0);
+
+}
+
+
+.nav2-con.active, .nav2-con:hover{
+    color: rgb(0, 85, 255);
+    background-color: #f5f8ff;
+}
+.nav2-con span{
+    font-size: 14px;
+}
+
+.numbers{
+    background-color: #dee8ff;
+}
+
+
+
+@media (max-width: 1000px) {
+
+    .card .card-img-top{
+        height: 316;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .footer-logo{
+        width: 150px;
+        margin-bottom: 10px;
+    }
+    
+}
+
+@media (max-width: 575px) {
+    
+    .footer-header, .footer-link{
+        text-align: center;
+    }
+}
