@@ -1,13 +1,14 @@
 body{
-    overflow-x: hidden;
-    background-color: #fafbff;
+    /* overflow-x: hidden; */
     height: 100vh;
+    background-color: #fafcff !important;
+
 }
 
-/* main{
-
-} */
-
+.nav-container-2{
+    flex-wrap: nowrap;
+    width: 1200px;
+}
 ul{
     list-style: none;
     padding-inline-start: 0 !important;
@@ -24,7 +25,7 @@ ul{
 }
 
 .dropdown:hover .dropdown-menu, .dropdown:hover .dropdown-overlay{
-    display: block;
+    display: block !important;
 }
 
 .dropdown-menu{
@@ -107,16 +108,30 @@ ul{
     
 }
 .adobe-dropdown-menu{
-    width: 400px;
-    transform: translateX(-300px) !important;
+    width: 500px;
+    transform: translateX(-400px) !important;
+}
+
+.adobe-dropdown-menu{
+    width: 500px;
+    transform: translateX(-400px) !important;
+}
+
+.dropdown:hover .adobe-dropdown-menu{
+    display: flex !important;
 }
 
 .dropdown-menu-btn{
-    align-items: center !important;
-    border: 2px solid blue;
+    background-color: rgb(245, 248, 255) !important;
 }
+.dropdown-menu-btn:hover{
+    background-color: #dee8ff !important;
+    border-color: rgb(84, 187, 255) !important;
+    border-width: 1px !important;
+}
+
 .dropdown-menu.show ~ .dropdown-overlay {
-  display: block;
+  display: block !important;
 }
 
 .dropdown-resp:hover .dropdown-menu-resp{
@@ -125,7 +140,9 @@ ul{
 
 }
 
-
+.nav2-con{
+    width: 200px !important;
+}
 .nav2-con.active, .nav2-con:hover{
     color: rgb(0, 85, 255);
     background-color: #f5f8ff;
@@ -136,9 +153,16 @@ ul{
 
 .numbers{
     background-color: #dee8ff;
+    width: 20px;
+    height: 20px;
+    font-size: 12px !important;
+    padding: 12px;
 }
 
-
+svg{
+    height: 50px;
+    stroke: #0057ff;
+}
 
 @media (max-width: 1000px) {
 
@@ -153,9 +177,13 @@ ul{
         width: 150px;
         margin-bottom: 10px;
     }
-    
 }
 
+@media (min-width: 780px) {
+    .sub-heading{
+        width: 70% !important;
+    }
+}
 @media (max-width: 575px) {
     
     .footer-header, .footer-link{
