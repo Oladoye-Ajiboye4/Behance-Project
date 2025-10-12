@@ -1,10 +1,13 @@
 body{
-    /* overflow-x: hidden; */
+    overflow-x: hidden;
     height: 100vh;
     background-color: #fafcff !important;
 
 }
 
+.all-nav-container{
+    z-index: 1000;
+}
 .nav-container-2{
     flex-wrap: nowrap;
     width: 1200px;
