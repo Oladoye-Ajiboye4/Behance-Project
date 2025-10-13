@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Behance - Clone</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css"
+        integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/start-trial.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+    <!-- Bootstrap 5 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="position-sticky top-0 all-nav-container bg-white">
+        <nav class="navbar navbar-expand-lg bg-white border-bottom border-1 border-secondary px-2 py-0">
+            <div class="container-fluid w-100">
+                <div class="mainMenu">
+                    <button class="btn d-lg-none" type="button" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                        <i class="bi bi-list fs-2 text-dark"></i>
+                    </button>
+                    <a class="navbar-brand d-none d-lg-block" href="#"><img width="90px"
+                            src="images/Untitled_design-removebg-preview.png" alt=""></a>
+                    <a class="navbar-brand d-lg-none" href="#"><img width="30px" height="20px"
+                            src="images/download__2_-removebg-preview.png" alt=""></a>
+
+                </div>
+                <div class="d-lg-none">
+                    <button class="btn btn-primary fw-bold px-3 py-1 rounded-pill">Use App</button>
+                </div>
+                <div class="d-none d-lg-flex navs justify-content-between align-items-center w-100">
+                    <ul class="navbar-nav mb-2 align-items-center mb-lg-0 text-dark">
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="#">Explore</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" aria-current="page" href="#">Job</a>
+                        </li>
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu py-3">
+                                <li><a class="dropdown-item" href="#">Overview</a></li>
+                                <li><a class="dropdown-item" href="#">Career Goals</a></li>
+                                <li><a class="dropdown-item" href="#">Commissioned Projects</a></li>
+                                <li><a class="dropdown-item" href="#">Creative Apprentiship</a></li>
+                            </ul>
+                            <img src="images/iconamoon--arrow-down-2-light.png" height="20px" alt="">
+                        </li>
+                        <li class="navBreak">|</li>
+                        <li class="nav-item dropdown d-flex align-items-center">
+                            <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                Hire
+                            </a>
+                            <ul class="dropdown-menu py-3">
+                                <li><a class="dropdown-item align-items-center d-flex" href="hire.html"
+                                        target="_blank"><img src="images/mdi-light--clipboard-text.png" alt="">Hiring
+                                        Dashboard</a></li>
+                                <li><a class="dropdown-item align-items-center d-flex" href="#"><img
+                                            src="images/mynaui--search.png" alt="">Freelancers</a></li>
+                                <li><a class="dropdown-item align-items-center d-flex" href="#"><img
+                                            src="images/iconamoon--arrow-down-2-light.png" alt="">Hire On Behance</a>
+                                </li>
+                                <li><a class="dropdown-item align-items-center d-flex" href="#"><img
+                                            src="images/formkit--add.png" alt="">Create New Job</a></li>
+                                <hr>
+                                <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Logo
+                                        Designers</a>
+                                </li>
+                                <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Brand
+                                        Designers</a></li>
+                                <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Website
+                                        Designers</a></li>
+                                <li><a class="dropdown-item dropdown-subItem align-items-center"
+                                        href="#">Illustrators</a>
+                                </li>
+                                <li><a class="dropdown-item dropdown-subItem align-items-center" href="#">Social Media
+                                        Designers</a></li>
+
+                            </ul>
+                            <img src="images/iconamoon--arrow-down-2-light.png" height="20px" alt="">
+                        </li>
+
+
+
+                    </ul>
+
+                    <div class="border border-1 rounded-pill w-100 d-flex gap-2 px-2 py-1 mx-2" style="height: 40px;">
+                        <i class="bi bi-search fs-5"></i>
+                        <input type="text" class="border-0 w-100">
+                    </div>
+
+                    <div class="d-flex align-items-center gap-3 ms-auto">
+                        <a href="start_trial.html"><button
+                                class="btn text-white navBtnTrial rounded-pill px-2 py-1 fs-6" data-bs-toggle="tooltip"
+                                data-bs-placement="bottom" data-bs-title="Try Behance Pro with a 7-day free trial">Start
+                                a
+                                Free Trial</button></a>
+                        <a href=""><button class="btn btn-outline-primary rounded-pill px-3 py-1 fs-6 signin-btn">Sign
+                                In</button></a>
+
+                        <div class="adobeCon position-relative">
+                            <li class="nav-item dropdown adobeDropdown d-flex align-items-center">
+                                <a class="nav-link text-dark" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-expanded="false">
+                                    <img src="images/Untitled_design__1_-removebg-preview.png" width="90" height="70"
+                                        alt="">
+                                </a>
+                                <ul
+                                    class="dropdown-menu d-none py-3 text-primary adobe-dropdown-menu px-2 flex-column gap-2 rounded-4">
+                                    <div
+                                        class="d-flex px-2 dropdown-item align-items-center justify-content-between dropdown-menu-btn rounded-3 border border-1">
+                                        <div class="d-flex align-items-center gap-2 text-primary p-0 m-0 px-2 py-2">
+                                            <div class="ps-0" style="width: 22px;"><img
+                                                    src="images/logos--adobe-icon.png" style="width: 100%;" alt="">
+                                            </div>
+                                            <!-- <div style="width: 1px; height: 4px;"><p style="width: 1px; height: 10px;">|</p></div> -->
+                                            <div>
+                                                <li class="navBreak"
+                                                    style="font-weight: 100 !important; font-size: 20px;">|
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <h6 class=" fs-6 p-0 m-0">Go to Adobe.com</h6>
+                                                <p class="p-0 m-0">Access your apps, services, files, and more</p>
+                                            </div>
+                                        </div>
+                                        <div><i class="bi bi-arrow-right fs-4 text-primary"></i></div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex px-2 dropdown-item align-items-center justify-content-between dropdown-menu-btn rounded-3 border border-1">
+                                        <div class="d-flex align-items-center gap-2 text-primary p-0 m-0 px-2 py-2">
+                                            <div class="ps-0" style="width: 30px;"><img
+                                                    src="images/1697265347565-removebg-preview.png" style="width: 100%;"
+                                                    alt=""></div>
+
+                                            <div>
+                                                <li class="navBreak"
+                                                    style="font-weight: 100 !important; font-size: 20px;">|
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <h6 class=" fs-6 p-0 m-0">Get Adobe Express Free</h6>
+                                                <p class="p-0 m-0">Quickly make contents from thousands of free
+                                                    templates
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div><i class="bi bi-arrow-right fs-4 text-primary"></i></div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex px-2 dropdown-item align-items-center justify-content-between dropdown-menu-btn rounded-3 border border-1">
+                                        <div class="d-flex align-items-center gap-2 text-primary p-0 m-0 px-2 py-2">
+                                            <div class="ps-0" style="width: 30px;"><img
+                                                    src="images/download-removebg-preview.png" style="width: 100%;"
+                                                    alt="">
+                                            </div>
+                                            <!-- <div style="width: 1px; height: 4px;"><p style="width: 1px; height: 10px;">|</p></div> -->
+                                            <div>
+                                                <li class="navBreak"
+                                                    style="font-weight: 100 !important; font-size: 20px;">|
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <h6 class=" fs-6 p-0 m-0">30-day free trial of Adobe Stock</h6>
+                                                <p class="p-0 m-0">835M+ assets, plus edits with generative AI</p>
+                                            </div>
+                                        </div>
+                                        <div><i class="bi bi-arrow-right fs-4 text-primary"></i></div>
+                                    </div>
+
+                                    <div
+                                        class="d-flex px-2 dropdown-item align-items-center justify-content-between dropdown-menu-btn rounded-3 border border-1">
+                                        <div class="d-flex align-items-center gap-2 text-primary p-0 m-0 px-2 py-2">
+                                            <div class="ps-0" style="width: 22px;"><img
+                                                    src="images/download__2_-removebg-preview.png" style="width: 100%;"
+                                                    alt=""></div>
+                                            <!-- <div style="width: 1px; height: 4px;"><p style="width: 1px; height: 10px;">|</p></div> -->
+                                            <div>
+                                                <li class="navBreak"
+                                                    style="font-weight: 100 !important; font-size: 20px;">|
+                                                </li>
+                                            </div>
+                                            <div>
+                                                <h6 class=" fs-6 p-0 m-0">7-day free trial of Behance Pro</h6>
+                                                <p class="p-0 m-0">Supercharge your creative career with Behance Pro
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div><i class="bi bi-arrow-right fs-4 text-primary"></i></div>
+                                    </div>
+                                </ul>
+                                <div class="dropdown-overlay"></div>
+
+                            </li>
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+
+
+    <div class="offcanvas offcanvas-start w-50" data-bs-backdrop="true" data-bs-scroll="true" tabindex="-1"
+        id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+        <div class="offcanvas-header align-items-center">
+            <button type="button" class="bg-transparent border-0" data-bs-dismiss="offcanvas" aria-label="Close"><i
+                    class="bi bi-x fs-2"></i></button>
+            <a href=""><button class="btn btn-outline-primary rounded-pill px-3 py-1 fs-6 signin-btn">Log
+                    In</button></a>
+        </div>
+        <div class="offcanvas-body">
+            <ul class="navbar-nav me-auto mb-2 align-items-start mb-lg-0 text-dark navbar-nav navbar-nav-resp">
+                <li class="nav-item">
+                    <a class="nav-link active text-dark" aria-current="page" href="index.html">Explore</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-dark" aria-current="page" href="#">Job</a>
+                </li>
+                <li class="nav-item dropdown-resp">
+                    <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        Resources
+                    </a>
+                    <ul class="dropdown-menu-resp d-none py-3">
+                        <li><a class="dropdown-item fs-6 mb-3" href="#">Overview</a></li>
+                        <li><a class="dropdown-item fs-6 mb-3" href="#">Career Goals</a></li>
+                        <li><a class="dropdown-item fs-6 mb-3" href="#">Commissioned Projects</a></li>
+                        <li><a class="dropdown-item fs-6" href="#">Creative Apprentiship</a></li>
+                    </ul>
+
+                </li>
+                <li class="nav-item dropdown-resp d-column">
+                    <a class="nav-link text-dark dropdown-toggle" href="hire.html" role="button"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        Hire
+                    </a>
+
+                    <ul class="dropdown-menu-resp d-none py-3 fs-6">
+                        <li><a class="dropdown-item align-items-center d-flex fs-6 mb-2" href="hire.html">Hiring
+                                Dashboard</a>
+                        </li>
+                        <li><a class="dropdown-item align-items-center d-flex fs-6 mb-2" href="#">Freelancers</a></li>
+                        <li><a class="dropdown-item align-items-center d-flex fs-6 mb-2" href="#">Hire On Behance</a>
+                        </li>
+                        <li><a class="dropdown-item align-items-center d-flex fs-6 mb-2" href="#">Create New Job</a>
+                        </li>
+                        <hr>
+                        <li><a class="dropdown-item dropdown-subItem align-items-center mb-2 fs-6" href="#">Logo
+                                Designers</a>
+                        </li>
+                        <li><a class="dropdown-item dropdown-subItem align-items-center mb-2 fs-6" href="#">Brand
+                                Designers</a></li>
+                        <li><a class="dropdown-item dropdown-subItem align-items-center mb-2 fs-6" href="#">Website
+                                Designers</a></li>
+                        <li><a class="dropdown-item dropdown-subItem align-items-center mb-2 fs-6"
+                                href="#">Illustrators</a>
+                        </li>
+                        <li><a class="dropdown-item dropdown-subItem align-items-center fs-6" href="#">Social Media
+                                Designers</a></li>
+
+                    </ul>
+                </li>
+
+            </ul>
+
+            <div class="d-flex mt-5 gap-3 flex-column">
+                <img src="images/apple-app-store-button.svg" width="150px" alt="">
+                <img src="images/google-play-button.svg" width="150px" alt="">
+            </div>
+
+            <div>
+
+                <li class="nav-item dropdown-resp mt-4">
+                    <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        More Behance
+                    </a>
+                    <ul class="dropdown-menu-resp d-none py-3">
+                        <li><a class="dropdown-item fs-6 mb-3" href="#">Career at Behance</a></li>
+                        <li><a class="dropdown-item fs-6 mb-3" href="#">About Bahance</a></li>
+                        <li><a class="dropdown-item fs-6 mb-3" href="#">Adobe Portfolio</a></li>
+                        <li><a class="dropdown-item fs-6" href="#">Blog</a></li>
+                    </ul>
+
+                </li>
+
+                <li class="dropdown-resp">
+                    <a class="nav-link text-dark dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        English
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-resp w-25">
+                        <li><a class="dropdown-item active" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li>
+                            <hr class="dropdown-divider">
+                        </li>
+                        <li><a class="dropdown-item" href="#">Separated link</a></li>
+                    </ul>
+                </li>
+            </div>
+
+        </div>
+    </div>
+
+
+    <section class="Main-heading py-5">
+        <div class="container d-flex justify-content-center align-items-center flex-column">
+            <h1 class="text-white line-brea display-3 fw-bold openingHeading p-0">Accelerate Your Creative Career with
+                Behance Pro</h1>
+            <p class="fs-5 text-white w-50 text-center">Take your career further with tools designed to showcase your
+                creativity,
+                reach more people, and earn more—all in one place.</p>
+
+            <div class="d-flex justify-content-center align-items-center gap-3">
+                <button class="btn btn-light rounded-pill px-4 fw-bold py-2">Start Free Trial</button>
+                <button class="btn btn-dark rounded-pill px-4 py-2 fw-bold border-1 border-secondary">Compare
+                    Plan</button>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="py-5 sect2">
+        <div class="container">
+
+            <h1 class="display-4 fw-bold text-center">Why upgrade to Pro?</h1>
+        </div>
+
+        <div class="container-fluid row px-4">
+            <div class="col-md-3 col-12 d-flex justify-content-center align-items-center">
+                <div class="card rounded-5 d-flex justify-content-center align-items-center px-2 py-4 card-blue card-group-1" style="width: 30rem;">
+                    <div class="card-img-cover d-flex align-items-center justify-content-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="38" height="22" fill="none" viewBox="0 0 38 22">
+                            <path fill-rule="evenodd"
+                                d="M25.031 1.625a1 1 0 0 1 1-1h10.547a1 1 0 0 1 1 1v10.547a1 1 0 1 1-2 0V4.039L24.881 14.737a3.345 3.345 0 0 1-4.73 0l-4.888-4.888a1.344 1.344 0 0 0-1.901 0L2.129 21.082a1 1 0 0 1-1.414-1.414L11.947 8.435a3.343 3.343 0 0 1 4.73 0l4.888 4.888a1.344 1.344 0 0 0 1.901 0L34.164 2.625H26.03a1 1 0 0 1-1-1"
+                                clip-rule="evenodd"></path>
+                            <defs>
+                                <linearGradient id="a" x1="19" x2="19" y1="1.625" y2="20.375"
+                                    gradientUnits="userSpaceOnUse">
+                                    <stop stop-color="#0057FF" stop-opacity=".6"></stop>
+                                    <stop offset="1" stop-color="#0057FF"></stop>
+                                </linearGradient>
+                            </defs>
+                        </svg>
+                    </div>
+                    <div class="card-body px-0 d-flex justify-content-center align-items-center flex-column">
+                        <h5 class="card-title fs-4 mt-1">Expand Your Reach</h5>
+                        <p class="card-text line-break text-center">Reach more clients and collaborators and get your work seen by the right people at the right time.</p>
+                        <div class="d-flex align-items-center gap-2">
+                            <a href="#" class="text-primary fs-5">Learn more</a>
+                            <span><i class="bi bi-chevron-compact-down text-primary fs-4"></i></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-dark py-5 text-white">
+        <div class="container">
+            <div class="row align-item-center justify-content-md-between justify-content-center">
+                <div class="col-12 col-lg-2 d-flex justify-content-center justify-content-sm-start align-items-start">
+                    <img src="images/logos--behance.png" alt="" width="200px" class="footer-logo">
+                </div>
+                <div class="col-8 col-sm-6 col-md-3 col-lg-2 mt-5 mt-sm-3">
+                    <h6 class="footer-header">Built For Creatives</h6>
+                    <ul class="d-flex flex-column gap-3 mt-5">
+                        <a class="footer-link">
+                            <li>Try Behance Pro</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Find Inspiration</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Get Hired</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Sell Creative Assets</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Sell Freelance Services</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="col-8 col-sm-6 col-md-3 col-lg-2 mt-3">
+                    <h6 class="footer-header">Built For Creatives</h6>
+                    <ul class="d-flex flex-column gap-3 mt-5">
+                        <a class="footer-link">
+                            <li>Try Behance Pro</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Find Inspiration</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Get Hired</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Sell Creative Assets</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Sell Freelance Services</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="col-8 col-sm-6 col-md-3 col-lg-2 mt-3">
+                    <h6 class="footer-header">Built For Creatives</h6>
+                    <ul class="d-flex flex-column gap-3 mt-5">
+                        <a class="footer-link">
+                            <li>Try Behance Pro</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Find Inspiration</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Get Hired</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Sell Creative Assets</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Sell Freelance Services</li>
+                        </a>
+                    </ul>
+                </div>
+
+                <div class="col-8 col-sm-6 col-md-3 col-lg-2 mt-3">
+                    <h6 class="footer-header">Built For Creatives</h6>
+                    <ul class="d-flex flex-column gap-3 mt-5">
+                        <a class="footer-link">
+                            <li>Try Behance Pro</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Find Inspiration</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Get Hired</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Sell Creative Assets</li>
+                        </a>
+                        <a class="footer-link">
+                            <li>Sell Freelance Services</li>
+                        </a>
+                    </ul>
+                </div>
+
+            </div>
+
+            <hr class="text-white mt-5">
+        </div>
+
+        <div class="d-flex justify-content-between">
+            <div class="d-flex align-items-center gap-3">
+                <div class="d-flex gap-2 align-items-center">
+                    <img src="images/uil--adobe.png" width="30px" alt="">
+                    <span class="fw-bold fs-6">Adobe</span>
+                </div>
+
+                <div>&copy 2025 Adobe Inc. All rights reserved.</div>
+
+
+            </div>
+        </div>
+    </footer>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+        integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"
+        integrity="sha384-cuYeSxntonz0PPNlHhBs68uyIAVpIIOZZ5JqeqvYYIcEL727kskC66kF92t6Xl2V"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+        const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+
+</html>
