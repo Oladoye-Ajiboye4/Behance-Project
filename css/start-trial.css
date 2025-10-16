@@ -212,6 +212,10 @@ footer {
     height: 100%;
 }
 
+.main-heading-texts p {
+    width: 50% !important;
+}
+
 
 .sect2 {
     background-color: #fafcff;
@@ -347,8 +351,22 @@ footer {
     width: 30 !important;
 }
 
-.card-text{
+.card-text {
     text-align: center;
+}
+
+.stories-heading h1 {
+    width: 75%;
+    text-align: left
+}
+
+.stories-heading p {
+    width: 50%;
+    text-align: left;
+}
+
+.card-link:hover{
+    text-decoration: underline !important;
 }
 @media (max-width: 1200px) and (min-width: 576px) {
 
@@ -414,6 +432,17 @@ footer {
 
 @media (max-width: 1000px) {
     .bar-main-text {
+        width: 100% !important;
+    }
+
+    .stories-heading h1,
+    .stories-heading p {
+        width: 100%;
+        text-align: center
+    }
+
+    .main-heading-texts h1,
+    .main-heading-texts p {
         width: 100% !important;
     }
 }
