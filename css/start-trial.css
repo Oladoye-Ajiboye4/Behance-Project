@@ -308,7 +308,6 @@ footer {
 }
 
 .img-sect {
-    background-image: url('../images/pro_boost_projects_2x.webp');
     background-size: cover;
     background-repeat: no-repeat;
     border-top-left-radius: 30px;
@@ -348,6 +347,9 @@ footer {
     width: 30 !important;
 }
 
+.card-text{
+    text-align: center;
+}
 @media (max-width: 1200px) and (min-width: 576px) {
 
     .sect2-cards {
@@ -401,12 +403,7 @@ footer {
     }
 
     .blue-bar {
-        background: linear-gradient(to right, #0186fd 20%, #0020ad);
         height: 250px;
-    }
-
-    .bar-text {
-        color: #bdd0ff;
     }
 
     .wide-card-text {
